@@ -1,7 +1,7 @@
 {
   "name": "@lavateinn/create",
   "version": "1.0.1",
-  "description": "The initializer for Lavateinn",
+  "description": "The initializer is a CLI tool to create a new Lævateinn (lavateinn) project.",
   "author": "Star Inc.",
   "homepage": "https://github.com/star-inc/lavateinn",
   "repository": "https://github.com/star-inc/create-lavateinn",
