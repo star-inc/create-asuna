@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "The initializer for Lavateinn",
   "author": "Star Inc.",
-  "homepage": "https://starinc.xyz",
+  "homepage": "https://github.com/star-inc/lavateinn",
+  "repository": "https://github.com/star-inc/create-lavateinn",
+  "bugs": {
+    "url": "https://github.com/star-inc/create-lavateinn/issues"
+  },
   "license": "BSD-3-Clause",
   "main": "initializer.mjs",
   "bin": {
