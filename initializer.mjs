@@ -120,25 +120,38 @@ const {
         "./package.json",
         `file://${rootPath}/${workingDir}/`,
     );
-    const packageJson = JSON.parse(fs.readFileSync(packagePath));
+    const packageJson = JSON.parse(fs.readFileSync(packagePath, {
+        encoding: "utf8",
+    }));
     packageJson.name = projectName;
     packageJson.description = projectDescription;
-    fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 2));
+    fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 2), {
+        encoding: "utf8",
+    });
 
     // Replace the APP_NAME to "const.mjs"
     const constPath = new URL(
         "./src/init/const.mjs",
         `file://${rootPath}/${workingDir}/`,
     );
-    let constContent = fs.readFileSync(constPath, "utf8");
+    let constContent = fs.readFileSync(constPath, {
+        encoding: "utf8",
+    });
     constContent = constContent.replace(
         /APP_NAME\s*=\s*".*"/, `APP_NAME = "${projectName}"`,
     );
     constContent = constContent.replace(
         /APP_DESCRIPTION\s*=\s*".*"/, `APP_DESCRIPTION = "${projectDescription}"`,
     );
-    fs.writeFileSync(constPath, constContent);
+    fs.writeFileSync(constPath, constContent, {
+        encoding: "utf8",
+    });
 }
 
 // Print the success message
+console.info();
 console.info("Lævateinn has been initialized successfully.");
+console.info(`Project Name: ${projectName}`);
+console.info(`Project Description: ${projectDescription}`);
+console.info(`Working Directory: ${workingDir}`);
+console.info();
