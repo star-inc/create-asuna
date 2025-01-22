@@ -11,7 +11,7 @@ The initializer is a CLI tool to create a new [Lævateinn (lavateinn)](https://g
 Follow the steps below to create a new microservice project.
 
 ```sh
-npm init @laevateinn
+npm init @lavateinn
 ```
 
 Enter the project name and the initializer will create a new project.
