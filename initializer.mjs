@@ -38,6 +38,15 @@ const {
     type: "input",
     name: "projectName",
     message: "Enter the project name:",
+    validate: (input) => {
+        // Check if the input format is valid
+        if (!input.match(/^[a-z0-9-]+$/)) {
+            return "The project name must be in lowercase and alphanumeric characters.";
+        }
+
+        // Return true if the input is valid
+        return true;
+    }
 }, {
     type: "input",
     name: "projectDescription",
