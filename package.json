@@ -6,7 +6,9 @@
   "homepage": "https://starinc.xyz",
   "license": "BSD-3-Clause",
   "main": "initializer.mjs",
-  "bin": "initializer.mjs",
+  "bin": {
+    "create": "initializer.mjs"
+  },
   "scripts": {
     "lint:es": "eslint .",
     "lint:es:fix": "eslint . --fix"
