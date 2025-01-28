@@ -46,7 +46,7 @@ const {
 
         // Return true if the input is valid
         return true;
-    }
+    },
 }, {
     type: "input",
     name: "projectDescription",
@@ -154,6 +154,24 @@ const {
     );
     fs.writeFileSync(constPath, constContent, {
         encoding: "utf8",
+    });
+}
+
+// Correct file permissions
+{
+    // Repair .husky scripts
+    const huskyDirectory = new URL(
+        "./.husky/",
+        `file://${rootPath}/${workingDir}/`,
+    );
+
+    // Read the directory
+    const huskyFiles = fs.readdirSync(huskyDirectory);
+
+    // Repair the file permissions
+    huskyFiles.forEach((filename) => {
+        const filePath = new URL(`./${filename}`, huskyDirectory);
+        fs.chmodSync(filePath, 0o755);
     });
 }
 
