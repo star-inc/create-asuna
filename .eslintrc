@@ -14,6 +14,7 @@
     "jsdoc/no-undefined-types": 1,
     "jsdoc/require-hyphen-before-param-description": 1,
     "linebreak-style": 1,
+    "max-len": "off",
     "indent": [
       "error",
       4
