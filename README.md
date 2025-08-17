@@ -1,4 +1,4 @@
-# Asuna (asuna) Initializer
+# Asuna Initializer
 
 Tiny and flexible microservice framework for fast development.
 
@@ -23,7 +23,7 @@ cd <project-name>
 npm install
 ```
 
-Asuna (asuna) is ready to use.
+Asuna is ready to use.
 
 ## License
 

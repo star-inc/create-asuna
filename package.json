@@ -1,7 +1,7 @@
 {
   "name": "@asuna/create",
   "version": "1.0.2",
-  "description": "The initializer is a CLI tool to create a new Asuna (asuna) project.",
+  "description": "The initializer is a CLI tool to create a new Asuna project.",
   "author": "Star Inc.",
   "homepage": "https://github.com/star-inc/asuna",
   "repository": "https://github.com/star-inc/create-asuna",
