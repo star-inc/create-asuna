@@ -11,7 +11,7 @@ The initializer is a CLI tool to create a new [Asuna (asuna)](https://github.com
 Follow the steps below to create a new microservice project.
 
 ```sh
-npm init @asuna
+bun create asuna
 ```
 
 Enter the project name and the initializer will create a new project.
@@ -20,7 +20,7 @@ Don't forget to install the dependencies.
 
 ```sh
 cd <project-name>
-npm install
+bun install
 ```
 
 Asuna is ready to use.
