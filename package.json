@@ -1,33 +1,30 @@
 {
-  "name": "@lavateinn/create",
+  "name": "@asuna/create",
   "version": "1.0.2",
-  "description": "The initializer is a CLI tool to create a new Lævateinn (lavateinn) project.",
+  "description": "The initializer is a CLI tool to create a new Asuna (asuna) project.",
   "author": "Star Inc.",
-  "homepage": "https://github.com/star-inc/lavateinn",
-  "repository": "https://github.com/star-inc/create-lavateinn",
+  "homepage": "https://github.com/star-inc/asuna",
+  "repository": "https://github.com/star-inc/create-asuna",
   "bugs": {
-    "url": "https://github.com/star-inc/create-lavateinn/issues"
+    "url": "https://github.com/star-inc/create-asuna/issues"
   },
   "license": "BSD-3-Clause",
-  "main": "initializer.mjs",
+  "main": "initializer.ts",
   "bin": {
-    "create": "initializer.mjs"
+    "create": "initializer.ts"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "bun": ">=1.0.0"
   },
   "scripts": {
     "lint:es": "eslint .",
     "lint:es:fix": "eslint . --fix"
   },
   "dependencies": {
-    "decompress": "^4.2.1",
-    "got": "^14.4.5",
-    "inquirer": "^12.3.2",
-    "unzipper": "^0.12.3"
+    "fflate": "^0.8.2"
   },
   "devDependencies": {
-    "@types/got": "^9.6.12",
+    "@types/bun": "^1.0.0",
     "eslint": "^8.17.0",
     "eslint-config-nymph": "^0.15.0",
     "eslint-plugin-jsdoc": "^48.2.3",
