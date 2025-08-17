@@ -26,8 +26,6 @@
   "devDependencies": {
     "@types/bun": "^1.0.0",
     "eslint": "^8.17.0",
-    "eslint-config-nymph": "^0.15.0",
-    "eslint-plugin-jsdoc": "^48.2.3",
-    "eslint-plugin-mocha": "^10.5.0"
+    "eslint-config-nymph": "^0.15.0"
   }
 }

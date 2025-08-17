@@ -1,18 +1,10 @@
 {
   "root": true,
-  "plugins": [
-    "jsdoc",
-    "mocha"
-  ],
   "extends": [
     "eslint:recommended",
-    "plugin:jsdoc/recommended",
-    "plugin:mocha/recommended",
     "nymph"
   ],
   "rules": {
-    "jsdoc/no-undefined-types": 1,
-    "jsdoc/require-hyphen-before-param-description": 1,
     "linebreak-style": 1,
     "max-len": "off",
     "indent": [
@@ -34,17 +26,6 @@
     "ecmaVersion": 2023
   },
   "overrides": [
-    {
-      "files": [
-        "test/**/*.mjs"
-      ],
-      "rules": {
-        "max-len": "off"
-      },
-      "env": {
-        "mocha": true
-      }
-    },
     {
       "files": [
         "src/models/*.mjs"
